@@ -20,32 +20,32 @@ export const SERVICES = [
   {
     title: 'Weekly Mowing',
     description: 'Precise cutting at the optimal height for your grass type. Clippings mulched or bagged — your call.',
-    icon: '🌿',
+    icon: 'mowing',
   },
   {
     title: 'Edging & Trimming',
     description: 'Clean lines along driveways, walkways, and beds. The detail that separates good from great.',
-    icon: '✂️',
+    icon: 'scissors',
   },
   {
     title: 'Fertilization',
     description: 'Seasonal nutrient programs tailored to your soil. Thick, green, weed-resistant turf year-round.',
-    icon: '🧪',
+    icon: 'flask',
   },
   {
     title: 'Seasonal Cleanup',
     description: 'Spring debris removal and fall leaf cleanup. Your yard stays sharp through every season change.',
-    icon: '🍂',
+    icon: 'leaf',
   },
   {
     title: 'Mulching',
     description: 'Fresh mulch in beds and tree rings. Moisture retention, weed suppression, and curb appeal in one.',
-    icon: '🪵',
+    icon: 'layers',
   },
   {
     title: 'Irrigation',
     description: 'Sprinkler install, repair, and seasonal blowouts. Water smarter, not harder.',
-    icon: '💧',
+    icon: 'droplet',
   },
 ];
 

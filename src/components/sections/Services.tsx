@@ -3,6 +3,7 @@
 import { SERVICES } from '@/lib/data';
 import SectionHeading from '@/components/ui/SectionHeading';
 import TiltCard from '@/components/ui/TiltCard';
+import ServiceIcon from '@/components/ui/ServiceIcon';
 import { StaggerContainer, StaggerItem } from '@/components/ui/AnimateIn';
 
 export default function Services() {
@@ -19,7 +20,7 @@ export default function Services() {
           {SERVICES.map((service) => (
             <StaggerItem key={service.title}>
               <TiltCard className="h-full">
-                <span className="mb-4 block text-3xl">{service.icon}</span>
+                <ServiceIcon name={service.icon} className="mb-4 h-8 w-8 text-sage" />
                 <h3 className="font-display text-xl font-bold text-forest">
                   {service.title}
                 </h3>
