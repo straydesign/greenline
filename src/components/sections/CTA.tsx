@@ -11,6 +11,15 @@ export default function CTA() {
       className="relative overflow-hidden bg-forest py-24 md:py-32"
       aria-label="Call to action"
     >
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 h-full w-full object-cover opacity-20"
+        src="/videos/grass-closeup.mp4"
+        poster="/images/parallax-2.jpg"
+      />
       <GrainOverlay />
 
       <div className="relative z-10 mx-auto max-w-3xl px-6 text-center">

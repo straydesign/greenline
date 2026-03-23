@@ -6,6 +6,7 @@ import { isMobile, prefersReducedMotion } from '@/lib/mobile';
 
 interface ParallaxWindowProps {
   imageUrl: string;
+  videoUrl?: string;
   alt: string;
   height?: string;
   overlayOpacity?: number;
@@ -13,6 +14,7 @@ interface ParallaxWindowProps {
 
 function ParallaxWindowDesktop({
   imageUrl,
+  videoUrl,
   alt,
   height = '60vh',
   overlayOpacity = 0.15,
@@ -34,10 +36,23 @@ function ParallaxWindowDesktop({
       aria-label={alt}
     >
       <motion.div className="absolute inset-0" style={{ y, scale }}>
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${imageUrl})`, height: '130%', top: '-15%' }}
-        />
+        {videoUrl ? (
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 h-full w-full object-cover"
+            style={{ height: '130%', top: '-15%', position: 'absolute' }}
+            src={videoUrl}
+            poster={imageUrl}
+          />
+        ) : (
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${imageUrl})`, height: '130%', top: '-15%' }}
+          />
+        )}
       </motion.div>
       <div className="absolute inset-0 bg-forest" style={{ opacity: overlayOpacity }} />
     </div>
@@ -46,6 +61,7 @@ function ParallaxWindowDesktop({
 
 function ParallaxWindowStatic({
   imageUrl,
+  videoUrl,
   alt,
   height = '60vh',
   overlayOpacity = 0.15,
@@ -58,10 +74,22 @@ function ParallaxWindowStatic({
       aria-label={alt}
     >
       <div className="absolute inset-0">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${imageUrl})` }}
-        />
+        {videoUrl ? (
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 h-full w-full object-cover"
+            src={videoUrl}
+            poster={imageUrl}
+          />
+        ) : (
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${imageUrl})` }}
+          />
+        )}
       </div>
       <div className="absolute inset-0 bg-forest" style={{ opacity: overlayOpacity }} />
     </div>

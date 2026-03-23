@@ -19,6 +19,7 @@ export default function Home() {
         <Services />
         <ParallaxWindow
           imageUrl="/images/parallax-1.jpg"
+          videoUrl="/videos/lawn-mowing.mp4"
           alt="Freshly manicured lawn with crisp edging"
         />
         <Portfolio />
@@ -28,6 +29,7 @@ export default function Home() {
         <Pricing />
         <ParallaxWindow
           imageUrl="/images/parallax-2.jpg"
+          videoUrl="/videos/aerial-mowing.mp4"
           alt="Close-up of fresh-cut grass blades"
         />
         <CTA />
