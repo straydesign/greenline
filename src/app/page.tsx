@@ -18,7 +18,7 @@ export default function Home() {
         <Hero />
         <Services />
         <ParallaxWindow
-          imageUrl="/images/parallax-1.svg"
+          imageUrl="/images/parallax-1.jpg"
           alt="Freshly manicured lawn with crisp edging"
         />
         <Portfolio />
@@ -27,7 +27,7 @@ export default function Home() {
         <Testimonials />
         <Pricing />
         <ParallaxWindow
-          imageUrl="/images/parallax-2.svg"
+          imageUrl="/images/parallax-2.jpg"
           alt="Close-up of fresh-cut grass blades"
         />
         <CTA />

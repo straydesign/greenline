@@ -53,20 +53,20 @@ export const PORTFOLIO_ITEMS = [
   {
     title: 'Overgrown to Pristine',
     description: 'Full restoration of a neglected quarter-acre lot in Millcreek.',
-    beforeImage: '/images/before-1.svg',
-    afterImage: '/images/after-1.svg',
+    beforeImage: '/images/before-1.jpg',
+    afterImage: '/images/after-1.jpg',
   },
   {
     title: 'Curb Appeal Transformation',
     description: 'Edging, mulching, and weekly maintenance brought this front yard back to life.',
-    beforeImage: '/images/before-2.svg',
-    afterImage: '/images/after-2.svg',
+    beforeImage: '/images/before-2.jpg',
+    afterImage: '/images/after-2.jpg',
   },
   {
     title: 'Commercial Property Care',
     description: 'Year-round grounds maintenance for a 2-acre office park.',
-    beforeImage: '/images/before-3.svg',
-    afterImage: '/images/after-3.svg',
+    beforeImage: '/images/before-3.jpg',
+    afterImage: '/images/after-3.jpg',
   },
 ];
 
@@ -179,7 +179,7 @@ export const PRICING_TIERS = [
 ];
 
 export const HERO_IMAGES = [
-  '/images/hero-1.svg',
-  '/images/hero-2.svg',
-  '/images/hero-3.svg',
+  '/images/hero-1.jpg',
+  '/images/hero-2.jpg',
+  '/images/hero-3.jpg',
 ];
